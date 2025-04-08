@@ -5,6 +5,12 @@ This repository contains the implementation of **Rotating-view super-resolution 
 - *Rapid Whole Brain 180µm Mesoscale In-vivo T2w Imaging*, ISMRM 2025 (oral)
 - *Rotating-view super-resolution (ROVER)-MRI reconstruction using tailored Implicit Neural Network*, ISMRM 2024 (oral power pitch)
 
+## ✨ Highlights
+
+- Achieves 180 µm isotropic resolution T2w MRI in ~17 minutes
+- Leverages 8 rotated views and 5× super-resolution
+- Uses multi-resolution hash encoding and implicit neural fields
+- Validated on ex-vivo and in-vivo datasets
 
 ## 📂 Directory Structure
 
@@ -32,7 +38,9 @@ Install dependencies (optional):
 pip install -r requirements.txt
 ```
 
-### Training
+### 🔍 Demo
+
+#### Training
 
 Modify the config file in `configs/` and run:
 
@@ -40,7 +48,7 @@ Modify the config file in `configs/` and run:
 python bumonkey_hash_v8_noastype.py --config configs/your_config.yaml
 ```
 
-### Evaluation
+#### Test
 
 ```bash
 python bumonkey_hash_v8_test.py --config configs/your_test_config.yaml
@@ -48,15 +56,41 @@ python bumonkey_hash_v8_test.py --config configs/your_test_config.yaml
 
 ## 📊 Results
 
-We demonstrate high-quality reconstruction of whole-brain T2-weighted MRI using our enhanced ROVER-MRI framework.
+We present 5× super-resolution reconstruction from 8-view low-resolution T2w MRI using our method.
 
-Below is a comparison between the Bicubic, LS-SRR, and our reconstructed high-resolution output (5× SR from 8 rotated views):
+The figure below compares Bicubic, LS-SRR, and our reconstruction on simulated data:
 
 ![Comparison](BUMonkey_Results/bumonkey.png)
+*Figure: Sagittal reconstructions and corresponding error maps for Bicubic, LS-SRR, and ROVER-MRI on simulated low-resolution data.
+
+
+## 📚 Citation
+
+If you use this code in your research, please cite:
+
+```bibtex
+@inproceedings{rover2025,
+  title={Rapid Whole Brain 180µm Mesoscale In-vivo T2w Imaging},
+  author={Lyu, J. and Ning, L. and others},
+  booktitle={ISMRM},
+  year={2025}
+}
+@inproceedings{lyurotating,
+  title={Rotating-view super-resolution (ROVER)-MRI reconstruction using tailored Implicit Neural Network},
+  author={Lyu, J. and Ning, L. and others},
+  booktitle={ISMRM},
+  year={2024}
+}
+```
 
 ## 📄 License
 
 This project is released under the MIT License. See `LICENSE` for details.
 
 ---
+## 🤝 Contributors
 
+- Jun Lyu
+- Lipeng Ning, William Consagra, Qiang Liu, Richard J. Rushmore, Yogesh Rathi
+
+Contact: jlyu1@bwh.harvard.edu
