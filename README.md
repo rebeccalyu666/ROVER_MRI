@@ -81,6 +81,12 @@ If you use this code in your research, please cite:
   booktitle={ISMRM},
   year={2024}
 }
+@article{lyu2025rapid,
+  title={Rapid Whole Brain Mesoscale In-vivo MR Imaging using Multi-scale Implicit Neural Representation},
+  author={Lyu, Jun and Ning, Lipeng and Consagra, William and Liu, Qiang and Rushmore, Richard J and Bilgic, Berkin and Rathi, Yogesh},
+  journal={arXiv preprint arXiv:2502.08634},
+  year={2025}
+}
 ```
 
 ## 📄 License
