@@ -50,7 +50,7 @@ python bumonkey_hash_v8_test.py --config configs/your_test_config.yaml
 
 We demonstrate high-quality reconstruction of whole-brain T2-weighted MRI using our enhanced ROVER-MRI framework.
 
-Below is a comparison between the bicubic, LS-SRR, and our reconstructed high-resolution output (5× SR from 8 rotated views):
+Below is a comparison between the Bicubic, LS-SRR, and our reconstructed high-resolution output (5× SR from 8 rotated views):
 
 ![Comparison](BUMonkey_Results/bumonkey.png)
 
